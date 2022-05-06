@@ -1,0 +1,56 @@
+
+body {
+    background-color: #fff;
+}
+
+.nav-connection {
+    left: 323%;
+}
+
+.max-height-page {
+    position: absolute; 
+    top: 3000px;
+}
+
+.body-page {
+    position: absolute;
+    left: 0px;
+    top: 340px;
+    width: 100%;
+    height: 1700px;
+    background-color: #EFEFEF;
+}
+
+.rect-title {
+    position: absolute;
+    left: 50px;
+    top: 380px;
+    background-color: #4188D4;
+    width: 740px;
+    height: 140px;
+}
+
+.body-background {
+    position: absolute;
+    left: 20px;
+    top: 480px;
+    background-color: #E7E7E7;
+    width: 100%;
+    height: 1700px;
+}
+
+.inscription {
+    position: absolute;
+    width: 290px;
+    height: 55px;
+    background-color: #C4C4C4;
+    border: 1px solid #909090;
+    left: 80%;
+    top: 550px;
+    cursor: pointer;
+}
+
+.inscription:hover {
+    opacity: 0.9;
+}
+

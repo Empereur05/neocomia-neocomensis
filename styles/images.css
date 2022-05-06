@@ -1,0 +1,16 @@
+.image-1 {
+    position: absolute;
+    left: 15px;
+    top: 80px;
+    filter: invert(100%);
+}
+.nav-connection-icon {
+    top: 17px;
+    left: 320%;
+}
+
+.banniere {
+    position: absolute;
+    left: 0px;
+    top: -120px;
+}
