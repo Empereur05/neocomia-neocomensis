@@ -44,3 +44,11 @@ h3 {
     padding-left: 15px;
     color: aliceblue;
 }
+
+.texte-voir-plus {
+    position: absolute;
+    text-decoration: underline;
+    left: 110px;
+    top: 95%;
+    font-size: 15px;
+}
