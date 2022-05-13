@@ -12,20 +12,29 @@
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="../index.html">Neocomia Neocomensis</a>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">Neocomia Neocomensis</a>
+      </div>
+      <ul class="nav navbar-nav ">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="#">réseaux</a></li>
+        <li><a href="../page/histoire.html">histoire</a></li>
+        <li class="nav-connection-icon"><img src="../image/login image.png" width="22px"></li>
+        <li class="active nav-connection" class="nav-connection"><a href="../login/login.html">connection</a></li>
+      </ul>
     </div>
-    <ul class="nav navbar-nav ">
-      <li><a href="../index.html">Home</a></li>
-      <li><a href="#">réseaux</a></li>
-      <li><a href="../page/histoire.html">histoire</a></li>
-      <li class="nav-connection-icon"><img src="../image/login image.png" width="22px"></li>
-      <li class="active nav-connection" class="nav-connection"><a href="../login/login.html">connection</a></li>
-    </ul>
-  </div>
-</nav>
+  </nav>
+
+
+  <form action="action_page.php" style="position: absolute; left:45%; top:35%;">
+    <label for="fname">utilisateur:</label><br>
+    <input type="text" id="fname" name="fname" value="admin"><br>
+    <label for="lname">mot de passe:</label><br>
+    <input type="password" id="lname" name="lname" value=""><br><br>
+    <input type="submit" value="Submit">
+  </form> 
     
 </body>
 </html>

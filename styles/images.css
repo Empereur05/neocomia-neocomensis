@@ -14,3 +14,18 @@
     left: 0px;
     top: -120px;
 }
+
+.arrow {
+    position: absolute;
+    left: 240px;
+    top: 10px;
+    filter: invert(95%);
+}
+
+.background-image {
+    position: absolute;
+    left: 1.5%;
+    top: 480px;
+    width: 98.5%;
+    opacity: 0.2;
+}
