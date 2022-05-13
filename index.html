@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" style="max-width: 100px;">
 <head>
   <title>neocomia neocomensis</title>
   <meta charset="utf-8">
@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="styles/font.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="login/cookie.js"></script>
+  <script src="script/animation.js"></script>
 </head>
-<body>
+<body onload="animation()">
 
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
@@ -23,7 +25,7 @@
       <li><a href="#">réseaux</a></li>
       <li><a href="page/histoire.html">histoire</a></li>
       <li class="nav-connection-icon"><img src="image/login image.png" width="22px"></li>
-      <li class="nav-connection" class="nav-connection"><a href="login/login.html">connection</a></li>
+      <li class="nav-connection"><a href="login/login.html">connection</a></li>
     </ul>
   </div>
 </nav>
@@ -32,7 +34,7 @@
 <img src="image/113.png" class="image-1" width="80px">
 
 <div class="body-page"></div>
-<div class="body-background"></div>
+<img src="image/neuchatel-ville.jpeg" class="background-image" width="1500px">
 <div class="rect-title">
   <h1>information et actualité</h1>
   <h4>de la neocomia</h4>
@@ -43,11 +45,16 @@
 
 <div class="inscription">
   <p class="texte-inscription">s'inscrire - 10frs</p>
+  <img src="image/pngwing.png" class="arrow" width="30px">
 </div>
 
 <a href="#" class="texte-voir-plus">voir plus d'information</a>
 
 <div class="max-height-page">fin</div>
+<p id="data" style="position: absolute; top: 200px; color: white">hello</p>
+<script>
+    document.getElementById("data").innerHTML = getCookie("idUser");
+</script>
 
 </body>
 </html>
