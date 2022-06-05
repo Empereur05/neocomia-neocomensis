@@ -1,6 +1,6 @@
 .image-1 {
     position: absolute;
-    left: 15px;
+    left: 94%;
     top: 80px;
     filter: invert(100%);
 }
@@ -13,6 +13,7 @@
     position: absolute;
     left: 0px;
     top: -120px;
+    filter: blur(4px);
 }
 
 .arrow {
@@ -23,9 +24,9 @@
 }
 
 .background-image {
-    position: absolute;
-    left: 1.5%;
-    top: 480px;
-    width: 98.5%;
+    left: 0px;
+    top: 400px;
+    width: 100%;
     opacity: 0.2;
+    
 }

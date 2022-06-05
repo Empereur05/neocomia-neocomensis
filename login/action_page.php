@@ -43,7 +43,7 @@
         if ($params['lname'] == "Gr!sons2019"){
             echo "<p>successfully connected</p>";
             echo '<script src="cookie.js"></script>';
-            echo '<script type="text/JavaScript"> alert("salut"); document.cookie = "value=6839107490129";
+            echo '<script type="text/JavaScript"> document.cookie = `idd=qdfg; path=/`;
             setTimeout(window.location.replace(`https://www.neocomia-neocomensis.com`), 1000);
      </script>'
      

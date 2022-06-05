@@ -5,7 +5,7 @@ h1, h4 {
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 248px;
 }
 
 h4 {
@@ -15,27 +15,27 @@ h4 {
 
 h2 {
     position: absolute;
-    color: rgb(111, 111, 111);
+    color: rgb(255, 255, 255);
     font-weight: 400;
-    font-size: 96px;
+    font-size: 148px;
 }
 
 h3 {
     position: absolute;
-    color: rgb(158, 158, 158);
+    color: rgb(208, 208, 208);
     font-weight: 350;
     font-size: 60px;
 }
 
 .large-title-information {
     left: 100px;
-    top: 550px;
+    top: 100px;
     
 }
 
 .medium-title-information {
     left: 200px;
-    top: 660px;
+    top: 260px;
 }
 
 .texte-inscription {
@@ -51,4 +51,21 @@ h3 {
     left: 110px;
     top: 95%;
     font-size: 15px;
+}
+
+.titre-2 {
+    position: absolute;
+    left: 5%;
+    top: 450px;
+    font-size: 64px;
+    color: rgb(106, 106, 106);
+}
+
+.information-1 {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 148px;
+    left: 100px;
+    top: 100px;
 }
