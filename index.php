@@ -14,36 +14,38 @@
   <script src="script/animation.js"></script>
   <script src="script/main.js"></script>
 </head>
-<body onload="animation()">
+<body onload="adm()">
     
-    <nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">Neocomia Neocomensis</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">réseaux</a></li>
-      <li><a href="page/histoire.html">histoire</a></li>
-      <li class="nav-connection-icon"><img src="image/login image.png" width="22px"></li>
-      <li class="nav-connection"><a href="login/login.html">connection</a></li>
-    </ul>
-  </div>
-</nav>
-
 <img src="image/banniere-a.jpg" class="banniere" width="100%">
 <img src="image/113.png" class="image-1" width="80px">
 
 <div class="body-page"></div>
 
+<img class="bg-image" src="image/neuchatel-ville.jpeg" width="100%">
+<p class="titre-pro">Prochain Pince: </p>
+<div class="box-info-1"></div>
 
 
+<div class="max-height-page">fin</div>
+<p id="data" style="position: absolute; top: 200px; color: white"></p>
+<script>
+  if (getCookie("idUser")!=null){
+    document.getElementById("data").innerHTML = getCookie("idUser");
+  }
+    
+</script>
 
+<nav class="menubar">
+  <a href="index.html" class="menutext" style="font-size: 30px;">Neocomia Neocomensis</a>
+  <a href="login/login.html" class="menutext" style="left: 90%; padding-right: 5px;">connexion</a>
+  <a href="index.html" class="menutext" style="left: 83%;padding-right: 5px;">réseaux</a>
+  <a href="index.html" class="menutext" style="left: 74%;padding-right: 5px;">nos pinces</a>
+  <a href="index.html" class="menutext" style="left: 67%;padding-right: 5px;">histoire</a>
+</nav>
 
-<!--<h2 class="large-title-information">Prochain pince</h2>-->
-
-
-<h3 class="medium-title-information">vendredi 22 avril 2022</h3>
+<div class="edit-menu">
+    
+</div>
 
 <?php
     $servername = "127.0.0.1:3306";
@@ -52,10 +54,51 @@
     $dbname = "u806253155_actif";
     
     //echo $servername . " " . $username . " " . $password . " " . $dbname;
+    $style = "\"position: fixed; left: 0px; top: 0px; width: 100%; height: 50px; background-color: black;\"";
+    
+    $all_class = ["information-1", "box-info-1"];
+    $func = "";
+    
+    for ($x = 0; $x <= 1; $x++){
+        $func .= "document.getElementsByClassName('".$all_class[$x]."')[0].setAttribute('onmouseover', `alerter('".$all_class[$x]."')`);";
+        $func .= "document.getElementsByClassName('".$all_class[$x]."')[0].setAttribute('onmouseout', `out('".$all_class[$x]."')`);";
+        $func .= "document.getElementsByClassName('".$all_class[$x]."')[0].setAttribute('onclick', `clicks('".$all_class[$x]."')`);";
+    }
+    echo "<p style='position:absolute;top:100px;'>".$_COOKIE['idd']."</p>";
     
     if ($_COOKIE["idd"] == "qdfg") {
+        
         echo "
-        salut
+        <script>
+        alert('salut');
+        function adm(){
+            document.getElementsByClassName('menubar')[0].style.top = '50px'
+            document.getElementsByClassName('edit-menu')[0].innerHTML = '<div style=$style></div>'
+            var np = document.createElement('div')
+            np.id = 'cl1'
+            document.body.appendChild(np)
+            document.getElementById('cl1').innerHTML = '<img width=20 src=image/save.png style=position:absolute;filter:invert(100%);left:96%;top:14px>'
+            
+            document.getElementById('cl1').innerHTML += '<p style=position:absolute;left:35px;top:14px;font-size:18px;color:white;>ajouter</p>'
+
+            $func
+            
+        }
+        
+        function gg() {
+            var cu = document.getElementById(`ss`).value;
+            window.location.replace(`https://www.neocomia-neocomensis.com/update.php?f=`+cu+``);
+        }
+        function ff() {document.getElementById('cl1').innerHTML += '<div style=position:absolute;width:300px;height:500px;left:150px;top:100px;background-color:black><input id=ss type=text style=position:absolute;margin-left:15px;margin-top:20px></div>'}
+        function alerter(cl){document.getElementsByClassName(cl)[0].style.border = 'solid #008BDB 5px'}
+        function out(cl){document.getElementsByClassName(cl)[0].style.border = 'solid #008BDB 0px'}
+        function clicks(cl){
+            
+            document.getElementById('cl1').innerHTML = '<img width=20 src=image/save.png onclick=gg() style=position:absolute;filter:invert(100%);left:96%;top:14px><p style=position:absolute;left:35px;top:14px;font-size:18px;color:white;>ajouter</p>'
+            document.getElementById('cl1').innerHTML += '<p onclick=ff() style=position:absolute;left:110px;top:14px;font-size:18px;color:white;>'+cl+'</p>'
+        }
+          
+        </script>
         ";
     }
     

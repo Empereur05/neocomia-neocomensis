@@ -1,12 +1,13 @@
+
 .image-1 {
     position: absolute;
     left: 94%;
-    top: 80px;
+    top: 11%;
     filter: invert(100%);
 }
 .nav-connection-icon {
     top: 17px;
-    left: 320%;
+    left: 122%;
 }
 
 .banniere {
@@ -23,10 +24,9 @@
     filter: invert(95%);
 }
 
-.background-image {
+.bg-image {
+    position: absolute;
     left: 0px;
-    top: 400px;
-    width: 100%;
+    top: 41%;
     opacity: 0.2;
-    
 }
